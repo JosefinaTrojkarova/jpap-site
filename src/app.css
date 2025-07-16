@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/fonts/ClashDisplay-Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
+    --accent-color: #1F75FE;
+    --background-color: #F2F2F2;
+    --text-color: black;
+    --secondary-color: #AFAFAF;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    color: var(--text-color);
+}
