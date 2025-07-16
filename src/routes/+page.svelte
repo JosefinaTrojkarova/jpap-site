@@ -1,15 +1,15 @@
 <script>
     import '../reset.css'
     import '../app.css';
-    import Nav from "$lib/components/Nav.svelte";
-    import Button from "$lib/components/Button.svelte";
+    import { Nav, Button, Hero, DotMatrix } from '$lib';
     import { Mail, Download, ArrowRight } from '@lucide/svelte';
 </script>
 
-<Nav />
 
 <main>
-    <h1>Button Component Demo</h1>
+    <Nav />
+    <Hero />
+    <DotMatrix />
     
     <div class="button-examples">
         <!-- Button without icon -->
@@ -27,16 +27,12 @@
 
 <style>
     main {
-        padding: 2rem;
-        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        max-width: 1440px;
         margin: 0 auto;
-    }
-    
-    h1 {
-        font-family: 'Clash Display', sans-serif;
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        text-align: center;
+        gap: 4rem;
     }
     
     .button-examples {
@@ -44,5 +40,6 @@
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+        margin-bottom: 0rem;
     }
 </style>
